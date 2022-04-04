@@ -1,0 +1,77 @@
+:root{
+    --dark-color:#34507f;
+    --blue-color:#77b9eb;
+    --gray-color:rgb(218, 213, 213);
+}
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    font-family: "Roboto",sans-serif;
+    background-color: var(--gray-color);
+}
+/*****start navbar*****/
+.navbar{
+    background-color: var(--dark-color);
+} 
+.nav-link {
+    color: white;
+}
+.nav-link.active,
+.nav-link:focus,
+.nav-link:hover{
+    color: var(--blue-color);
+}
+.navbar .navbar-toggler{
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-brand {
+    color: white;
+    font-size: 2.5rem;
+ 
+}
+/*****end navbar*****/
+/****start Home Page*****/
+.home-page{
+    background-color: var(--dark-color);
+    color: white;
+    min-height: calc(80vh - 72px);
+ 
+}
+/****end Home Page*****/
+
+/*****   services   *****/
+.cards{
+    border: 2px ;
+    background-color: white;
+    margin: 20px;
+    padding: 30px;
+    width: 100%;
+}
+.h1{
+    color:var(--dark-color) ;
+    margin-top: 2rem;
+}
+.card-title{
+    color:var(--dark-color) ;
+    font-size: 20px;
+    font-weight: 200;
+}
+@media only screen and (max-width: 1000px) {
+    .page{
+      text-align: center;
+      margin: 20px;
+      padding: 20px;
+    }
+    .reverseRow {
+      flex-direction: column-reverse;
+      margin: 0 auto;
+    }
+  }
